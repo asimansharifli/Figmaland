@@ -1,0 +1,436 @@
+@import "./Assets/Style/all";
+/*Start Main SASS*/
+main{
+    /*Start Best Product SASS*/
+    #best-product{
+        width: 100%;
+        .best-product{
+            background-image:url(./Assets/Images/background-picture.png);
+            width: 100%;
+            height: 930px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            .container{
+                .best-product-content{
+                    padding: 185px 170px 0 170px;
+                    text-align: center;
+                    color:$Light-text-color;
+                    h1{
+                        font-size:64.5px;
+                        font-style: normal;
+                        font-weight: 700;
+                        text-align: center;
+                        line-height: 84px;
+                        letter-spacing: 0.2px;
+                    }
+                    p{
+                        font-size: 26px;
+                        line-height: 40px;
+                        font-style: normal;
+                        font-weight: 400;
+                        text-align: center;
+                        letter-spacing: 0.2px;
+                        margin-top: 8px;
+                        margin-bottom: 50px;
+                    }
+                    a{
+                        height: 52px;
+                        letter-spacing: 0.2px;
+                        @include a-try-for-free;     
+                    }
+                }
+            }
+        }
+    }
+    /*End Best Product SASS*/
+    /*Start Features SASS*/
+    #features{
+        .features{
+            margin-top: 115px;
+            .container{
+                .features-content{
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    padding: 0 267px;
+                    h2{
+                        font-size: 48px;
+                        line-height: 55px;
+                        letter-spacing: 0.2px;
+                        font-weight: 400px;
+                        font-style: normal;
+                        color: $Dark-background-text-color;
+                        margin-top:11px;
+                        margin-bottom: 27px;
+                    }
+                    p{
+                        font-size: 28px;
+                        line-height: 40px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $second-text-color;
+                    }
+                }
+                .reponsive-features-video{
+                    position: relative;
+                    margin:57px;
+                    display: none;
+                    figure{
+                        width: 100%;
+                        height: 216px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                    .responsive-video-play-button{
+                        svg{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                }
+                .features-cards-wrapper{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    margin-top: 90px;
+                    justify-content: space-between;
+                    .features-card-box{
+                        width: 30%;
+                        text-align: center;
+                        margin-top: 10px;
+                        &:hover{
+                            border: 2px solid $Primary;
+                        }
+                        svg{
+                            margin-top: 7px;
+                            transition: 0.5s;
+                            &:hover{
+                                transform: rotateZ(720deg);
+                            }
+                        }
+                        h3{
+                            margin: 27px 0 20px 0;
+                            font-size: 28px;
+                            line-height: 34px;
+                            letter-spacing: 0.1px;
+                            font-weight: 700;
+                            color: $Dark-background-text-color;
+                      
+                        }
+                        p{
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 25px;
+                            letter-spacing: 0.2px;
+                            color: $second-text-color;
+                        }
+                    }
+                }
+                .features-video{
+                    margin-top: 80px;
+                    position: relative;
+                    figure{
+                        width: 100%;
+                        height: 658px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        } 
+                    }
+                    .play-button{
+                        svg{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            &:hover{
+                                circle{
+                                    fill:$Dark-background-text-color;
+                                }
+                                path{
+                                    fill: $Primary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*End Features SASS*/
+    
+    /*Start Organization SASS*/
+    #organization{
+
+        .organization{
+            margin-top: 226px;
+            .container{
+                .all-of-organization{
+                   @include center;
+                    flex-wrap: wrap;
+                    .organization-content{
+                        text-align: left;
+                        padding: 0 30px;
+                        width: 50%;
+                        h2{
+                            font-size: 48px;
+                            line-height: 55px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400;
+                            color: $Dark-background-text-color;
+                        }
+                        p{
+                            font-size: 28px;
+                            line-height: 40px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400;
+                            color: $second-text-color;
+                            margin-top: 27px;
+                            margin-bottom: 62px;
+                        }
+                        a{  height: 60px;
+                            letter-spacing: 0.1px;
+                            @include a-try-for-free;
+                        }
+                    }
+                    .organization-photo{
+                        width: 50%;
+                        height: 349.17px;
+                        svg{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*End Organization SASS*/
+
+    /*Start Prototyping SASS*/
+    #prototyping{
+        .prototyping{
+            margin-top: 226px;
+            .container{
+                .all-of-prototyping{
+                    @include between;
+                    flex-wrap: wrap;
+                    .responsive-prototyping-content{
+                        text-align: center;
+                        display: none;
+                        h3{
+                            font-size: 20px;
+                            line-height: 28px;
+                            letter-spacing: 0.1px;
+                            font-weight: 700;
+                            color: $Dark-background-text-color;
+                        }
+                        h2{
+                            font-size: 48px;
+                            line-height: 55px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400px;
+                            color: $Dark-background-text-color;
+                            margin: 17px 87px 27px 87px;
+                        }
+                        p{
+                            font-size: 28px;
+                            line-height: 40px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400;
+                            color: $second-text-color;
+                            margin-bottom: 69px;
+                        }
+                    }
+                    .prototyping-photo{
+                        width:54%;
+                        height: 514px;
+                        svg{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .prototyping-content{
+                        text-align: left;
+                        padding:0 30px;
+                        width:43% ;
+                        .prototyping-content-text{
+                            h3{
+                                font-size: 20px;
+                                line-height: 28px;
+                                letter-spacing: 0.1px;
+                                font-weight: 700;
+                                color: $Dark-background-text-color;
+                            }
+                            h2{
+                                font-size: 48px;
+                                line-height: 55px;
+                                letter-spacing: 0.2px;
+                                font-weight: 400px;
+                                color: $Dark-background-text-color;
+                            }
+                        }
+                        .prototyping-content-form{
+                            margin-top: 25px;
+                            .prototyping-content-form-text{
+                                margin-top: 10px;
+                                margin-bottom: 35px;
+                                h3{
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                    letter-spacing: 0.1px;
+                                    font-weight: 700;
+                                    color: $Dark-background-text-color;
+                                }
+                                p{
+                                    font-size: 18px;
+                                    line-height: 40px;
+                                    letter-spacing: 0.2px;
+                                    font-weight: 400;
+                                    color: $second-text-color;
+                                }
+                            }
+                            form{
+                                .prototyping-form-input{
+                                    font-size: 14px;
+                                    @include input;
+                                    padding: 19px 39px;
+                                }
+                                .prototyping-form-button{
+                                    border-radius: 35px;
+                                    background-color: $Primary;
+                                    color: $Light-text-color;
+                                    padding: 19px 38px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*End Prototyping SASS*/
+
+    /*Start Partners SASS*/
+    #paterns{
+        .paterns{
+            margin-top: 226px;
+            .container{
+                .all-of-paterns{
+                    .paterns-context{
+                        text-align: center;
+                        padding: 0 267px;
+                        h2{
+                            font-size: 48px;
+                            line-height: 55px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400px;
+                            color: $Dark-background-text-color;
+                        }
+                        p{
+                            font-size: 28px;
+                            line-height: 40px;
+                            font-weight: 400;
+                            text-align: center;
+                            color: $second-text-color;
+                            margin-top: 27px;
+                        }
+                    }
+                    .patners-client-name{
+                        margin-top: 93px;
+                    }
+                    .patners-button{
+                        text-align: center;
+                        margin-top: 81px;
+                        a{
+                            @include a-try-for-free;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*End Partners SASS*/
+    
+    /*Start Testimonials SASS*/
+    #testimonials{
+        .testimonials{
+            margin-top: 191px;
+            .container{
+                .all-of-testimonials{
+                    .testimonials-content{
+                        text-align: center;
+                        padding: 0 60px;
+                        h2{
+                            font-size: 48px;
+                            line-height: 55px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400px;
+                            color: $Dark-background-text-color;
+                        }
+                        svg{
+                            margin: 90px 0 61px 0;
+                        }
+                        p{
+                            font-size: 28px;
+                            line-height: 40px;
+                            font-weight: 400;
+                            text-align: center;
+                            color: $second-text-color;
+                        }
+                    }
+                    .testimonials-person{
+                        @include center;
+                        margin-top: 62px;
+                    }
+                }
+            }
+        }
+    }
+    /*End Testimonials SASS*/
+
+}
+/*End Main SASS*/
+
+/*Start Main Media Sass*/
+@media (max-width:1200px){
+    /*Start Main*/
+    main{
+         /*Start Best Product SASS*/
+    #best-product{
+        .best-product{
+            height: 700px;
+            .container{
+                .best-product-content{
+                    padding: 170px 150px 0 150px;      
+                h1{
+                    font-size: 45px;
+                    line-height: 50px 
+                }
+                p{
+                    font-size: 19px;
+                    line-height: 28px;
+                    margin-top: 15px;
+                }
+                a{
+                    width: 220px;
+                    height: 45;
+                }
+                }
+            }
+        }
+    }
+}
+}
