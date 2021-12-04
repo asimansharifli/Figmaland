@@ -1,0 +1,201 @@
+/*Start Header SASS*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+header{
+    .header-navigation-bar{
+        position: absolute;
+        width: 100%;
+        .container{
+            .navigation-bar{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 35px;
+                .navbar{
+                    display: flex;
+                    align-items: center;
+                    nav{
+                        .nav-list{
+                            @include center;
+                            .nav-list-item{
+                                margin-left: 41px;
+                                position: relative;
+                                transition: 0.5s;
+                                a{
+                                    font-family: 'Fira Sans Condensed', sans-serif;
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight:400;
+                                    text-align: center;
+                                    letter-spacing: 0.2px;
+                                    color: $Light-text-color;
+                                    line-height: 28px;
+                                }
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    width: 0%;
+                                    height: 2px;
+                                    background-color:$Light-text-color;
+                                    display: flex;
+                                    transition: 0.5s;
+                                }
+                                &:hover::after{
+                                    width: 100%;
+                                }
+                                :hover{
+                                    color: $Primary;
+                                }
+                            }
+                        }
+                    }
+                    .logo{
+                        margin-left: 45.5px;
+                        figure{
+                            width: 186px;
+                            height: 58px;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                object-fit: cover;
+                                &:hover{
+                                    opacity: .3;
+                                }
+                            }
+                        }
+                    }  
+                }
+                .social{
+                    .social-list{
+                        @include center;
+                        .social-list-item{
+                            a{
+                                svg{
+                                    margin-left: 33px;
+                                    path{
+                                        transition: 0.3s;
+                                    }
+                                    &:hover{
+                                        .twitter{
+                                            fill:#1DA1F2;
+                                        }
+                                        .facebook{
+                                            fill:#4267B2;
+                                        }
+                                        .linkedin{
+                                            fill: #2867B2;
+                                        }
+                                    }
+                                }
+                            
+                            }
+                        }
+                    }
+                }
+            }
+            .responsive-menu{
+                display: none;
+            }
+            .responsive-navbar{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                display: none;
+                &-list{
+                    background-color: $Light-text-color;
+                    text-align: center;
+                    &-item{
+                        a{
+                            font-size: 25px;
+                            font-style: normal;
+                            letter-spacing: 1.2px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+/*End Header SASS*/
+
+/*Start Header Media SASS*/
+@media only screen and (max-width:1200px){
+    .header-navigation-bar{
+        .container{
+            .navigation-bar{
+                justify-content: space-between;
+                .navbar{
+                    nav{
+                        .nav-list{
+                            .nav-list-item{
+                                margin-left: 18px;
+                            }
+                        }
+                    }
+                    .logo{
+                        figure{
+                            width: 160px;
+                        }
+                    }
+                }
+                .social{
+                    .social-list{
+                        .social-list-item{
+                            svg{
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .header-navigation-bar{
+        .container{
+            padding: 0 40px;
+            .navigation-bar{
+                justify-content: space-between!important;
+                .navbar{
+                    nav{
+                        display: none;
+                    }
+                    .logo{
+                        margin-left: 0px!important;
+                        figure{
+                            width: 260px;
+                        }
+                    }
+                }
+                .social{
+                    display: none;
+                }
+                .responsive-menu{
+                    margin-right: 0px;
+                    display:block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:460px){
+    .header-navigation-bar{
+        .container{
+            .navigation-bar{
+                .navbar{
+                    .logo{
+                        figure{
+                            width: 160px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*End Header Media SASS*/
