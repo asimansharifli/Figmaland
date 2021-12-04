@@ -236,6 +236,157 @@ header .header-navigation-bar .container .responsive-navbar-list-item a {
 }
 
 /*End Header Media SASS*/
+footer {
+  margin-top: 100px;
+}
+
+footer .footer {
+  background-color: #252B42;
+  color: #FFFFFF;
+}
+
+footer .footer .container .all-of-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 160px 0 150px 0;
+}
+
+footer .footer .container .all-of-footer .footer-card {
+  width: 25%;
+  text-align: left;
+}
+
+footer .footer .container .all-of-footer .footer-card:hover {
+  color: #2091F9;
+}
+
+footer .footer .container .all-of-footer .footer-card h3 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+}
+
+footer .footer .container .all-of-footer .footer-card .footer-card-list {
+  margin-top: 16px;
+}
+
+footer .footer .container .all-of-footer .footer-card .footer-card-list a {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+footer .footer .container .all-of-footer .footer-card-information {
+  width: 25%;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-information-list .footer-card-information-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 21px;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-information-list .footer-card-information-list-item a svg:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border: 1px solid #2091F9;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-information-list .footer-card-information-list-item p {
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 44px;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-social-list .footer-card-social-list-item:not(:first-child) {
+  margin-left: 33px;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-social-list .footer-card-social-list-item a svg:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-social-list .footer-card-social-list-item a svg:hover .twitter {
+  fill: #1DA1F2;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-social-list .footer-card-social-list-item a svg:hover .facebook {
+  fill: #4267B2;
+}
+
+footer .footer .container .all-of-footer .footer-card-information .footer-card-social-list .footer-card-social-list-item a svg:hover .linkedin {
+  fill: #2867B2;
+}
+
+@media (max-width: 768px) {
+  footer .footer {
+    width: 100%;
+  }
+  footer .footer .container .all-of-footer {
+    padding: 113px 0;
+  }
+  footer .footer .container .all-of-footer .footer-card {
+    width: 100%;
+    text-align: center;
+    margin-top: 83px;
+    font-size: 25px;
+  }
+  footer .footer .container .all-of-footer .footer-card .footer-card-list .footer-card-list-item a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  footer .footer .container .all-of-footer .footer-card-information {
+    width: 100%;
+    margin-top: 80px;
+  }
+  footer .footer .container .all-of-footer .footer-card-information .footer-card-social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 /*Start Main SASS*/
 main {
   /*Start Best Product SASS*/
@@ -250,6 +401,10 @@ main {
   /*End Partners SASS*/
   /*Start Testimonials SASS*/
   /*End Testimonials SASS*/
+  /*Start Pricing*/
+  /*End Pricing*/
+  /*Start Contact Us*/
+  /*End Contact Us*/
 }
 
 main #best-product {
@@ -433,6 +588,8 @@ main #features .features .container .features-video figure {
 }
 
 main #features .features .container .features-video figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -654,16 +811,16 @@ main #prototyping .prototyping .container .all-of-prototyping .prototyping-conte
   padding: 19px 38px;
 }
 
-main #paterns .paterns {
+main #parterns .parterns {
   margin-top: 226px;
 }
 
-main #paterns .paterns .container .all-of-paterns .paterns-context {
-  text-align: center;
+main #parterns .parterns .container .all-of-parterns .parterns-content {
   padding: 0 267px;
+  text-align: center;
 }
 
-main #paterns .paterns .container .all-of-paterns .paterns-context h2 {
+main #parterns .parterns .container .all-of-parterns .parterns-content h2 {
   font-size: 48px;
   line-height: 55px;
   letter-spacing: 0.2px;
@@ -671,7 +828,7 @@ main #paterns .paterns .container .all-of-paterns .paterns-context h2 {
   color: #252B42;
 }
 
-main #paterns .paterns .container .all-of-paterns .paterns-context p {
+main #parterns .parterns .container .all-of-parterns .parterns-content p {
   font-size: 28px;
   line-height: 40px;
   font-weight: 400;
@@ -680,16 +837,51 @@ main #paterns .paterns .container .all-of-paterns .paterns-context p {
   margin-top: 27px;
 }
 
-main #paterns .paterns .container .all-of-paterns .patners-client-name {
+main #parterns .parterns .container .all-of-parterns .partners-client-name {
   margin-top: 93px;
 }
 
-main #paterns .paterns .container .all-of-paterns .patners-button {
+main #parterns .parterns .container .all-of-parterns .partners-client-name .clients-name-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #parterns .parterns .container .all-of-parterns .partners-client-name .clients-name-list .clients-name-list-item {
+  text-align: center;
+  width: 25%;
+  height: 160px;
+  border: 1px solid #D8D8D8;
+}
+
+main #parterns .parterns .container .all-of-parterns .partners-client-name .clients-name-list .clients-name-list-item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  color: #374754;
+  margin-bottom: 7px;
+  margin-top: 14px;
+}
+
+main #parterns .parterns .container .all-of-parterns .partners-client-name .clients-name-list .clients-name-list-item a img {
+  width: 70%;
+}
+
+main #parterns .parterns .container .all-of-parterns .partners-button {
   text-align: center;
   margin-top: 81px;
 }
 
-main #paterns .paterns .container .all-of-paterns .patners-button a {
+main #parterns .parterns .container .all-of-parterns .partners-button a {
   width: 236px;
   border-radius: 35px;
   padding: 16px 62px;
@@ -701,7 +893,7 @@ main #paterns .paterns .container .all-of-paterns .patners-button a {
   transition: 0.7s;
 }
 
-main #paterns .paterns .container .all-of-paterns .patners-button a:hover {
+main #parterns .parterns .container .all-of-parterns .partners-button a:hover {
   border: 2px solid #2091F9;
   background-color: #252B42;
 }
@@ -748,31 +940,1086 @@ main #testimonials .testimonials .container .all-of-testimonials .testimonials-p
   margin-top: 62px;
 }
 
+main #testimonials .testimonials .container .all-of-testimonials .testimonials-person .testimonials-person-text {
+  margin-left: 13px;
+  text-align: left;
+}
+
+main #testimonials .testimonials .container .all-of-testimonials .testimonials-person .testimonials-person-text h4 {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  color: #374754;
+  margin-bottom: 2px;
+}
+
+main #testimonials .testimonials .container .all-of-testimonials .testimonials-person .testimonials-person-text a {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+main #testimonials .testimonials .container .all-of-testimonials .testimonials-button {
+  text-align: center;
+  margin-top: 80px;
+}
+
+main #testimonials .testimonials .container .all-of-testimonials .testimonials-button a {
+  width: 236px;
+  border-radius: 35px;
+  padding: 16px 62px;
+  background-color: #2091F9;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  padding: 16px 47px;
+}
+
+main #testimonials .testimonials .container .all-of-testimonials .testimonials-button a:hover {
+  border: 2px solid #2091F9;
+  background-color: #252B42;
+}
+
+main #pricing .pricing {
+  margin-top: 100px;
+  background-color: #252B42;
+}
+
+main #pricing .pricing .container .all-of-pricing {
+  padding: 110px 0;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-content {
+  text-align: center;
+  padding: 0 150px 90px 150px;
+  color: #FFFFFF;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-content h2 {
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-content p {
+  padding: 0 117px;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #DEDEDE;
+  -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:nth-child(odd) {
+  padding: 43px 40px;
+  background-color: #FFFFFF;
+  color: #252B42;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:nth-child(odd) a {
+  color: #252B42;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:nth-child(odd) .pricing-card-button a {
+  background-color: #2091F9;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:nth-child(even) {
+  padding: 83px 40px;
+  background-color: #2091F9;
+  color: #FFFFFF;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:nth-child(even) a {
+  color: #FFFFFF;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:nth-child(even) .pricing-card-button a {
+  background-color: #FFFFFF;
+  color: #2091F9;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:nth-child(even) .pricing-card-button a:hover {
+  color: #FFFFFF;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-text {
+  padding: 0 30px;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-text h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  margin-bottom: 3px;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-text p {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 18px 0;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay span {
+  font-size: 74px;
+  line-height: 84px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay .pricing-card-pay-price {
+  text-align: left;
+  margin-left: 10px;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay .pricing-card-pay-price h3 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay .pricing-card-pay-price p {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-list .pricing-card-list-item {
+  margin-bottom: 20px;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-list .pricing-card-list-item a {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-button {
+  margin-top: 40px;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-button a {
+  width: 236px;
+  border-radius: 35px;
+  padding: 16px 62px;
+  background-color: #2091F9;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-button a:hover {
+  border: 2px solid #2091F9;
+  background-color: #252B42;
+}
+
+main #contact .contact {
+  margin-top: 100px;
+}
+
+main #contact .contact .container .all-of-contact .contact-content {
+  text-align: center;
+  padding: 0 160px 90px 160px;
+}
+
+main #contact .contact .container .all-of-contact .contact-content h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0.2px;
+  margin-bottom: 27px;
+}
+
+main #contact .contact .container .all-of-contact .contact-content p {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+}
+
+main #contact .contact .container .all-of-contact .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information {
+  display: none;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-form {
+  width: 39%;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-form h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-form form {
+  width: 100%;
+  padding: 30px 35px;
+  border-radius: 20px;
+  border: 1px solid #DDDDDD;
+  -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-form form input {
+  border-radius: 39px;
+  outline: none;
+  border: 1px solid #E8E8E8;
+  background: #F4F4F4;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  color: #E8E8E8;
+  background: #F5F5F5;
+  display: block;
+  width: 100%;
+  height: 51px;
+  padding-left: 24px;
+  margin-top: 35px;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-form form textarea {
+  resize: none;
+  background: #F5F5F5;
+  border-radius: 0px;
+  width: 100%;
+  height: 200px;
+  padding-left: 24px;
+  padding-top: 14px;
+  font-size: 16px;
+  background: #F5F5F5;
+  border: 1px solid #E8E8E8;
+  outline: none;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-form form button {
+  width: 236px;
+  border-radius: 35px;
+  padding: 16px 62px;
+  background-color: #2091F9;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-form form button:hover {
+  border: 2px solid #2091F9;
+  background-color: #252B42;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information {
+  width: 59%;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-information .contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-information .contact-list .contact-list-item {
+  width: 30%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-information .contact-list .contact-list-item a svg:hover {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  border: 1px solid #2091F9;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .location {
+  height: 323px;
+  margin: 36px 0 36px 78px;
+  width: 80%;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .location iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-social {
+  width: 30%;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-social .contact-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-social .contact-social-list .contact-social-list-item a svg:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 /*End Main SASS*/
 /*Start Main Media Sass*/
 @media (max-width: 1200px) {
-  /*Start Main*/
-  main {
-    /*Start Best Product SASS*/
-  }
   main #best-product .best-product {
     height: 700px;
   }
   main #best-product .best-product .container .best-product-content {
     padding: 170px 150px 0 150px;
   }
-  main #best-product .best-product .container .best-product-content h1 {
+  main #best-product .best-product .container .best-product-content h2 {
     font-size: 45px;
     line-height: 50px;
   }
   main #best-product .best-product .container .best-product-content p {
     font-size: 19px;
-    line-height: 28px;
-    margin-top: 15px;
+    line-height: 30px;
+    margin-top: 12px;
+    margin-bottom: 60px;
   }
   main #best-product .best-product .container .best-product-content a {
-    width: 220px;
-    height: 45;
+    width: 210px;
+    height: 48px;
+  }
+  main #features .features .container .features-content {
+    text-align: center;
+    padding: 0px 181px;
+  }
+  main #features .features .container .features-content h3 {
+    font-size: 45px;
+    margin-bottom: 17px;
+  }
+  main #features .features .container .features-content p {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  main #features .features .container .features-cards-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main #features .features .container .features-cards-wrapper .fea-card-box {
+    width: 30%;
+    padding: 0 0px;
+  }
+  main #features .features .container .features-cards-wrapper .fea-card-box h3 {
+    font-size: 24px;
+    margin: 25px 0;
+    line-height: 34px;
+  }
+  main #features .features .container .features-cards-wrapper .fea-card-box p {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  main #features .features .container .features-video figure {
+    height: 560px;
+  }
+  main #organization .organization {
+    margin-top: 200px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content {
+    padding: 0 31px;
+    width: 50%;
+  }
+  main #organization .organization .container .all-of-organization .organization-content h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content p {
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 40px;
+    margin-top: 22px;
+  }
+  main #prototyping .prototyping {
+    margin-top: 200px;
+  }
+  main #prototyping .prototyping .container {
+    padding: 0 100px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content {
+    padding: 0 6px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-text h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-text h2 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form {
+    margin-top: 30px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form .form-text {
+    margin-bottom: 30px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form .form-text h3 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form .form-text p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form form .prototyping-form-input {
+    padding: 16px 21px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form form .prototyping-form-button {
+    border-radius: 35px;
+    padding: 16px 23px;
+  }
+  main #partners .partners {
+    margin-top: 200px;
+  }
+  main #partners .partners .container .partners-full .partners-content {
+    text-align: center;
+    padding: 0px 200px;
+  }
+  main #partners .partners .container .partners-full .partners-content h2 {
+    font-size: 45px;
+    margin-bottom: 17px;
+  }
+  main #partners .partners .container .partners-full .partners-content p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  main #partners .partners .container .partners-full .partners-clients-name .clients-name-list .clients-name-list-item p {
+    margin-bottom: 8px;
+    margin-top: 21px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-content {
+    padding: 0 90px 90px 90px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-content p {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-card-button a {
+    padding: 10px 15px !important;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form {
+    width: 45%;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form form {
+    width: 100%;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-us-information {
+    width: 50%;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-information .contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-information .contact-list .contact-list-item {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-us-information .contact-social {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  main #best-product .best-product {
+    background-image: url(./Assets/Images/Responsive-best.png);
+    height: 1553px;
+    background-size: contain;
+  }
+  main #best-product .best-product .container {
+    padding: 0 40px;
+  }
+  main #best-product .best-product .container .best-product-content {
+    padding: 321px 40px 0px 40px;
+  }
+  main #best-product .best-product .container .best-product-content h1 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.20000000298023224px;
+    padding: 0px 30px;
+  }
+  main #best-product .best-product .container .best-product-content p {
+    font-size: 27px;
+    font-weight: 100;
+    line-height: 39px;
+    letter-spacing: 0.20000000298023224px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  main #features .features {
+    margin-top: 80px;
+  }
+  main #features .features .container {
+    padding: 0 30px;
+  }
+  main #features .features .container .features-content {
+    padding: 0px 100px;
+  }
+  main #features .features .container .features-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  main #features .features .container .features-content p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main #features .features .container .reponsive-features-video {
+    display: block;
+    margin-top: 66px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 60px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box svg {
+    width: 47px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box h3 {
+    font-size: 23px;
+    margin: 15px 0;
+    line-height: 40px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  main #features .features .container .features-video {
+    display: none;
+  }
+  main #organization .organization {
+    margin-top: 150px;
+  }
+  main #organization .organization .container {
+    padding: 0 40px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content {
+    width: 100%;
+    padding: 0 56px;
+    text-align: center;
+  }
+  main #organization .organization .container .all-of-organization .organization-content h2 {
+    font-size: 45px;
+    line-height: 54px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 85px;
+    margin-top: 27px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content a {
+    padding: 16px 62px;
+  }
+  main #organization .organization .container .all-of-organization .organization-photo {
+    margin-top: 90px;
+    width: 100%;
+  }
+  main #prototyping .prototyping {
+    margin-top: 150px;
+  }
+  main #prototyping .prototyping .container {
+    padding: 0 40px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .responsive-prototyping-content {
+    display: block;
+    width: 100%;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-photo {
+    width: 100%;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content {
+    text-align: center;
+    padding: 0 0px;
+    width: 100%;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-text {
+    display: none;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form {
+    margin-top: 95px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form .prototyping-content-form-text {
+    margin-bottom: 20px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form .prototyping-content-form-text h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form .prototyping-content-form-text p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form form .prototyping-form-input {
+    padding: 19px 93px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form form .prototyping-form-input-button {
+    padding: 17px 145px;
+    margin-top: 24px;
+  }
+  main #partners .partners {
+    margin-top: 100px;
+  }
+  main #partners .partners .container {
+    padding: 0 40px;
+  }
+  main #partners .partners .container .all-of-partners .parterns-content {
+    padding: 0px 0px;
+  }
+  main #partners .partners .container .all-of-partners .parterns-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  main #partners .partners .container .all-of-partners .parterns-content p {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  main #partners .partners .container .all-of-partners .partners-client-name .clients-name-list .clients-name-list-item {
+    width: 100%;
+    height: 288px;
+  }
+  main #partners .partners .container .all-of-partners .partners-client-name .clients-name-list .clients-name-list-item p {
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-top: 34px;
+  }
+  main #partners .partners .container .all-of-partners .partners-client-name .clients-name-list .clients-name-list-item a img {
+    width: 60%;
+  }
+  main #partners .partners .container .all-of-partners .partners-button a {
+    padding: 10px 15px;
+  }
+  main #testimonials .testimonials .container {
+    padding: 0 40px;
+  }
+  main #testimonials .testimonials .container .all-of-testimonials .testimonials-content h2 {
+    font-size: 34px;
+    line-height: 47px;
+  }
+  main #testimonials .testimonials .container .all-of-testimonials .testimonials-content svg {
+    margin: 90px 0px 60px 0px;
+  }
+  main #testimonials .testimonials .container .all-of-testimonials .testimonials-content p {
+    font-size: 21px;
+    line-height: 35px;
+  }
+  main #testimonials .testimonials .container .all-of-testimonials .testimonials-person .testimonials-person-text h4 {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: left;
+  }
+  main #testimonials .testimonials .container .all-of-testimonials .testimonials-person .testimonials-person-text a {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: left;
+  }
+  main #testimonials .testimonials .container .all-of-testimonials .testimonials-button a {
+    padding: 16px 12px;
+  }
+  main #pricing .pricing .container {
+    padding: 0 40px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-content {
+    padding: 0 0px 90px 0px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box {
+    width: 100%;
+    padding: 43px 105px;
+    margin-bottom: 50px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-text {
+    padding: 0 6px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-text h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-text p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay {
+    margin: 15px 0px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay span {
+    font-size: 74px;
+    line-height: 84px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay .pricing-card-pay-price h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-pay .pricing-card-pay-price p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-list .pricing-list-item a {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-button a {
+    color: #2091F9;
+  }
+  main #contact .contact .container {
+    padding: 0 40px;
+  }
+  main #contact .contact .container .all-of-contact .contact-content {
+    padding: 0 0 90px 0;
+  }
+  main #contact .contact .container .all-of-contact .contact-content h2 {
+    font-size: 38px;
+  }
+  main #contact .contact .container .all-of-contact .contact-content p {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information {
+    display: block;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information .contact-information .contact-list {
+    text-align: left;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information .contact-information .contact-list .contact-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.10000000149011612px;
+    margin-bottom: 20px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information .contact-information .contact-list .contact-list-item p {
+    margin-left: 15px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information .contact-information .contact-list .contact-list-item a svg:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information .contact-social {
+    width: 100%;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information .contact-social .contact-social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 90px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .responsive-contact-information .contact-social .contact-social-list .contact-social-list-item a svg:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form {
+    width: 100%;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form form {
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 20px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form form h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form form input {
+    height: 51px;
+    margin-top: 35px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form form textarea {
+    height: 200px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-form form button {
+    border-radius: 35px;
+    padding: 16px 48px;
+  }
+  main #contact .contact .container .all-of-contact .contact-us .contact-us-information {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  main #best-product .best-product {
+    height: 935px;
+  }
+  main #best-product .best-product .container {
+    padding: 0 40px;
+  }
+  main #best-product .best-product .container .best-product-content {
+    padding: 185px 0px 0px 00px;
+  }
+  main #best-product .best-product .container .best-product-content h1 {
+    font-size: 30px;
+    line-height: 34px;
+    padding: 0px 30px;
+  }
+  main #best-product .best-product .container .best-product-content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  main #features .features {
+    margin-top: 80px;
+  }
+  main #features .features .container {
+    padding: 0 40px;
+  }
+  main #features .features .container .features-content {
+    padding: 0 40px;
+  }
+  main #features .features .container .features-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  main #features .features .container .features-content p {
+    font-size: 19px;
+    line-height: 29px;
+  }
+  main #features .features .container .reponsive-features-video {
+    height: 240px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 40px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box svg {
+    width: 47px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box h3 {
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 28px;
+  }
+  main #features .features .container .features-cards-wrapper .features-card-box p {
+    font-size: 17px;
+    line-height: 34px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content {
+    padding: 0 30px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content h2 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content p {
+    font-size: 19px;
+    line-height: 29px;
+    margin-bottom: 70px;
+    margin-top: 27px;
+  }
+  main #organization .organization .container .all-of-organization .organization-content a {
+    padding: 12px 22px;
+  }
+  main #organization .organization .container .all-of-organization .organization-photo {
+    margin-top: 20px;
+    width: 100%;
+  }
+  main #prototyping .prototyping {
+    margin-top: 120px;
+  }
+  main #prototyping .prototyping .container {
+    padding: 0 40px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-photo {
+    margin-top: 20px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-photo svg {
+    height: 300px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form .prototyping-content-form-text h3 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form form .form-input {
+    padding: 19px 35px;
+  }
+  main #prototyping .prototyping .container .all-of-prototyping .prototyping-content .prototyping-content-form form .form-button {
+    padding: 17px 87px;
+    margin-top: 24px;
+  }
+  main #partners .partners {
+    margin-top: 100px;
+  }
+  main #partners .partners .container {
+    padding: 0 40px;
+  }
+  main #partners .partners .container .all-of-partners .patners-client-name .clients-name-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #partners .partners .container .all-of-partners .patners-client-name .clients-name-list .clients-name-list-item {
+    width: 100%;
+    height: 210px;
+    margin-top: 30px;
+  }
+  main #partners .partners .container .all-of-partners .patners-client-name .clients-name-list .clients-name-list-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+  main #partners .partners .container .all-of-partners .patners-client-name .clients-name-list .clients-name-list-item a img {
+    width: 60%;
+  }
+  main #partners .partners .container .all-of-partners .partners-button a {
+    padding: 10px 15px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-content p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box {
+    padding: 43px 0px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-tex {
+    padding: 0 58px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-title-tex p {
+    font-size: 15px;
+  }
+  main #pricing .pricing .container .all-of-pricing .pricing-cards-wrapper .pricing-card-box .pricing-card-list .pricing-card-list-item a {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #contact .contact .container {
+    padding: 0 40px;
+  }
+  main #contact .contact .container .all-of-contact .contact-content p {
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=index.css.map */

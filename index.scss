@@ -142,6 +142,7 @@ main{
                         width: 100%;
                         height: 658px;
                         img{
+                            object-fit: cover;
                             width: 100%;
                             height: 100%;
                             position: absolute;
@@ -324,14 +325,14 @@ main{
     /*End Prototyping SASS*/
 
     /*Start Partners SASS*/
-    #paterns{
-        .paterns{
+    #parterns{
+        .parterns{
             margin-top: 226px;
             .container{
-                .all-of-paterns{
-                    .paterns-context{
-                        text-align: center;
+                .all-of-parterns{
+                    .parterns-content{
                         padding: 0 267px;
+                        text-align: center;
                         h2{
                             font-size: 48px;
                             line-height: 55px;
@@ -348,10 +349,34 @@ main{
                             margin-top: 27px;
                         }
                     }
-                    .patners-client-name{
+                    .partners-client-name{
                         margin-top: 93px;
+                        .clients-name-list{
+                            @include center;
+                            flex-wrap: wrap;
+                            .clients-name-list-item{
+                                text-align: center;
+                                width: 25%;
+                                height: 160px;
+                                border: 1px solid #D8D8D8;
+                                p{
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 23px;
+                                    letter-spacing: 0.1px;
+                                    color: $second-text-color;
+                                    margin-bottom: 7px;
+                                    margin-top: 14px;
+                                }
+                                a{
+                                    img{
+                                        width: 70%;
+                                    }
+                                }
+                            }
+                        }
                     }
-                    .patners-button{
+                    .partners-button{
                         text-align: center;
                         margin-top: 81px;
                         a{
@@ -394,6 +419,33 @@ main{
                     .testimonials-person{
                         @include center;
                         margin-top: 62px;
+                        .testimonials-person-text{
+                            margin-left: 13px;
+                            text-align: left;
+                            h4{
+                                font-size: 16px;
+                                line-height: 23px;
+                                font-weight: 400;
+                                letter-spacing: 0.1px;
+                                color: $second-text-color;
+                                margin-bottom: 2px;
+                            }
+                            a{
+                                font-size: 15px;
+                                line-height: 28px;
+                                font-weight: 400;
+                                letter-spacing: 0.2px;
+                                color: $Dark-background-text-color;
+                            }
+                        }
+                    }
+                    .testimonials-button{
+                        text-align: center;
+                        margin-top: 80px;
+                        a{
+                        @include a-try-for-free;
+                        padding: 16px 47px;
+                        }
                     }
                 }
             }
@@ -401,36 +453,1195 @@ main{
     }
     /*End Testimonials SASS*/
 
-}
-/*End Main SASS*/
-
-/*Start Main Media Sass*/
-@media (max-width:1200px){
-    /*Start Main*/
-    main{
-         /*Start Best Product SASS*/
-    #best-product{
-        .best-product{
-            height: 700px;
+    /*Start Pricing*/
+    #pricing{
+        .pricing{
+            margin-top: 100px;
+            background-color: $Dark-background-text-color;
             .container{
-                .best-product-content{
-                    padding: 170px 150px 0 150px;      
-                h1{
-                    font-size: 45px;
-                    line-height: 50px 
-                }
-                p{
-                    font-size: 19px;
-                    line-height: 28px;
-                    margin-top: 15px;
-                }
-                a{
-                    width: 220px;
-                    height: 45;
-                }
+                .all-of-pricing{
+                    padding: 110px 0;
+                    .pricing-content{
+                        text-align: center;
+                        padding: 0 150px 90px 150px;
+                        color: $Light-text-color;
+                        h2{
+                            font-size: 48px;
+                            line-height: 55px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400;
+                            margin-bottom: 27px;
+                        }
+                        p{
+                            padding: 0 117px;
+                            font-size: 28px;
+                            line-height: 40px;
+                            letter-spacing: 0.2px;
+                            font-weight: 400;
+                            color: $Light-text-color;
+                        }
+                    }
+                    .pricing-cards-wrapper{
+                        @include between;
+                        flex-wrap: wrap;
+                        .pricing-card-box{
+                            width: 30%;
+                            text-align: center;
+                            border: 1px solid $box-border-color;
+                            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                            border-radius: 10px;
+                            &:nth-child(odd){
+                                padding: 43px 40px;
+                                background-color: $Light-text-color;
+                                color: $Dark-background-text-color;
+                                a{
+                                    color: $Dark-background-text-color;
+                                }
+                                .pricing-card-button a{
+                                    background-color: $Primary;
+                                }
+                            }
+                            &:nth-child(even){
+                                padding: 83px 40px;
+                                background-color: $Primary;
+                                color: $Light-text-color;
+                                a{
+                                    color: $Light-text-color;
+                                }
+                                .pricing-card-button a{
+                                    background-color: $Light-text-color;
+                                    color: $Primary;
+                                    &:hover{
+                                        color: $Light-text-color;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;                            }
+                            .pricing-card-title-text{
+                                padding: 0 30px;
+                                h3{
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                    font-weight: bold;
+                                    letter-spacing: 0.1px;
+                                    margin-bottom: 3px;
+                                }
+                                p{
+                                    font-size: 16px;
+                                    line-height: 23px;
+                                    letter-spacing: 0.1px;
+                                    font-weight: 400;
+                                }
+                            }
+                            .pricing-card-pay{
+                                @include center;
+                                margin: 18px 0;
+                                span{
+                                    font-size: 74px;
+                                    line-height: 84px;
+                                    letter-spacing: 0.2px;
+                                    font-weight: 700;
+                                }
+                                .pricing-card-pay-price{
+                                    text-align: left;
+                                    margin-left: 10px;
+                                    h3{
+                                        font-size: 20px;
+                                        line-height: 28px;
+                                        letter-spacing: 0.1px;
+                                        font-weight: 700;
+                                    }
+                                    p{
+                                        font-size: 16px;
+                                        line-height: 23px;
+                                        letter-spacing: 0.1px;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                            .pricing-card-list{
+                                .pricing-card-list-item{
+                                    margin-bottom: 20px;
+                                    a{
+                                        font-size: 15px;
+                                        line-height: 28px;
+                                        letter-spacing: 0.2px;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                            .pricing-card-button{
+                                margin-top: 40px;
+                                a{
+                                    @include a-try-for-free;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+    /*End Pricing*/
+    /*Start Contact Us*/
+    #contact{
+        .contact{
+            margin-top: 100px;
+            .container{
+                .all-of-contact{
+                    .contact-content{
+                        text-align: center;
+                        padding: 0 160px 90px 160px;
+                        h2{
+                            font-size: 48px;
+                            font-weight: 400;
+                            line-height: 55px;
+                            letter-spacing: 0.2px;
+                            margin-bottom: 27px;
+                        }
+                        p{
+                            font-size: 28px;
+                            font-weight: 400;
+                            line-height: 40px;
+                            letter-spacing: 0.2px;
+                        }
+                    }
+                    .contact-us{
+                        @include between;
+                        flex-wrap: wrap;
+                    .responsive-contact-information{
+                        display: none;
+                    }
+                    .contact-form{
+                        width: 39%;
+                        h2{
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 28px;
+                            letter-spacing: 0.1px;
+                            text-align: center;
+                        }
+                        form{
+                            width: 100%;
+                           padding: 30px 35px; 
+                           border-radius: 20px;
+                            border: 1px solid #DDDDDD;
+                            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                            border-radius: 20px;
+                            input{
+                                @include input;
+                                background: #F5F5F5;
+                                display: block;
+                                width: 100%;
+                                height: 51px;
+                                padding-left: 24px;
+                                margin-top: 35px;
+                            }
+                            textarea{
+                                resize: none;
+                                background: #F5F5F5;
+                                border-radius: 0px;
+                                width: 100%;
+                                height: 200px;
+                                padding-left: 24px;
+                                padding-top: 14px;
+                                font-size: 16px;
+                                background: #F5F5F5;
+                                border: 1px solid $input-border-color;
+                                outline: none;
+                                margin-bottom: 35px;
+                                margin-top: 35px;
+                            }
+                            button{
+                                @include a-try-for-free;
+                            }
+                        }
+                    }
+                    .contact-us-information{
+                        width: 59%;
+                    .contact-information{
+                        .contact-list{
+                            @include center;
+                            flex-wrap: wrap;
+                            .contact-list-item{
+                                width: 30%;
+                                text-align: center;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                letter-spacing: 0.1px;
+                             a{
+                                 svg{
+                                     &:hover{
+                                        transform: rotate(135deg);
+                                        border: 1px solid $Primary;
+                                        transition: 1s;
+                                     }
+                                 }
+                             }
+                            }
+                        }
+                    }
+                    .location{
+                        height: 323px;
+                        margin: 36px 0 36px 78px;
+                        width: 80%; 
+                    iframe{
+                        @include center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    }
+                    .contact-social{
+                        width: 30%; 
+                        .contact-social-list{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            .contact-social-list-item{
+                                a{
+                                    svg{
+                                        &:hover{
+                                            transform: rotate(360deg);
+                                            transition: 1s;
+                                         }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+                    }
+
+                }
+            }
+        }
+    }
+    /*End Contact Us*/
 }
+/*End Main SASS*/
+
+
+/*Start Main Media Sass*/
+@media (max-width: 1200px){
+    // Start Main Media
+    main{
+        // Start best Product Media
+        #best-product{
+            .best-product{
+                height: 700px;
+                .container{
+                    .best-product-content{
+                        padding:170px 150px 0 150px;
+                        h2{
+                            font-size: 45px;
+                            line-height: 50px;
+
+                        }
+                        p{
+                            font-size: 19px;
+                            line-height: 30px;
+                            margin-top: 12px;
+                            margin-bottom: 60px;
+                        }
+                        a{
+                            width: 210px;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+        // End Best Product Media
+
+    // Start Features Media 
+        #features{
+        .features{
+            .container{
+                .features-content{
+                    text-align: center;
+                    padding: 0px 181px;
+                h3{
+                    font-size: 45px;
+                    margin-bottom: 17px;
+                }
+                p{
+                    font-size: 27px;
+                    line-height: 40px;
+                }
+                }
+                
+                .features-cards-wrapper{
+                    justify-content: space-between;
+                    .fea-card-box{
+                        width: 30%;
+                        padding: 0 0px;
+                        h3{
+                            font-size: 24px;
+                            margin: 25px 0;
+                            line-height: 34px;
+                        }
+                        p{
+                            font-size: 21px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+                .features-video{
+                    figure{
+                        height: 560px;
+                    }
+                }
+            }
+        }
+    }
+    // End Features Media 
+    
+    // Start Organization Media
+    #organization{
+        .organization{
+            margin-top: 200px;
+            .container{
+                .all-of-organization{
+                    .organization-content{
+                        padding: 0 31px;
+                        width: 50%;
+                        h2{
+                            font-size: 38px;
+                            line-height: 44px;
+                        }
+                        p{
+                            font-size: 23px;
+                            line-height: 29px;
+                            margin-bottom: 40px;
+                            margin-top: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Organization Media
+
+    // Start Prototyping Media
+    #prototyping{
+        .prototyping{
+            margin-top: 200px;
+            .container{
+                padding: 0 100px;
+                .all-of-prototyping{
+                    .prototyping-content{
+                        padding: 0 6px;
+                        .prototyping-content-text{
+                            h3{
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+                            h2{
+                                font-size: 32px;
+                                line-height: 35px;
+                            }
+                        }
+                        .prototyping-content-form{
+                            margin-top: 30px;
+                            .form-text{
+                                margin-bottom: 30px;
+                                h3{
+                                    font-size: 17px;
+                                    line-height: 24px;
+                                }
+                                p{
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                }
+                            }
+                            form{
+                                .prototyping-form-input{
+                                    padding:16px 21px;
+                                }
+                                .prototyping-form-button{
+                                    border-radius: 35px;
+                                    padding: 16px 23px;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    // End Prototyping Media
+    
+    // Start Partners Media
+    #partners{
+        .partners{
+            margin-top: 200px;
+            .container{
+                .partners-full{
+                    .partners-content{
+                        text-align: center;
+                        padding: 0px 200px;
+                        h2{
+                            font-size: 45px;
+                            margin-bottom: 17px;
+                        }
+                        p{
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+                    }
+                    .partners-clients-name{
+                        .clients-name-list{
+                            .clients-name-list-item{
+                                p{
+                                    margin-bottom: 8px;
+                                    margin-top: 21px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    // End Partners Media 
+
+        // Start Pricing Media 
+        #pricing{
+            .pricing{
+                .container{
+                    .all-of-pricing{
+                        .pricing-content{
+                            padding: 0 90px 90px 90px;
+                            p{
+                                font-size: 26px;
+                                line-height: 38px;
+                            }
+                        }
+                            .pricing-card-button{
+                                a{
+
+                                    padding: 10px 15px!important;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+        // End Pricing Media 
+
+        // Start Contact Media 
+        #contact{
+            .contact{
+                .container{
+                    .all-of-contact{
+                        .contact-us{
+                        .contact-form{
+                            width: 45%;
+                            form{
+                                width: 100%;
+                            }
+                        }
+                        .contact-us-information{
+                            width: 50%;
+                        .contact-information{
+                            .contact-list{
+                                @include center;
+                                .contact-list-item{
+                                    font-size: 10px;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                        .contact-social{
+                            width: 50%; 
+                        }
+                        }
+                        }
+    
+                    }
+                }
+            }
+        }
+        // End Contact Media
+    }
+    // End Main Media
+    
+}
+
+@media  (max-width: 768px){
+    // Start Main Media
+    main{
+    // Start Best Product Media
+    #best-product{
+        .best-product{
+            background-image: url(./Assets/Images/Responsive-best.png);
+            height: 1553px;
+            background-size: contain;
+            .container{
+                padding: 0 40px;
+                .best-product-content{
+                    padding:321px 40px 0px 40px;;
+                    h1{
+                        font-size: 50px;
+                        font-weight: 400;
+                        line-height: 60px;
+                        letter-spacing: 0.20000000298023224px;
+                        padding: 0px 30px;
+                    }
+                    p{
+                        font-size: 27px;
+                        font-weight: 100;
+                        line-height: 39px;
+                        letter-spacing: 0.20000000298023224px;
+                        margin-top: 50px;
+                        margin-bottom: 80px;
+                    }
+                }
+            }
+        }
+    }
+    // End Best Product Media
+    // Start Features Media 
+      #features{
+        .features{
+            margin-top: 80px;
+            .container{
+                padding: 0 30px;
+                .features-content{
+                    padding: 0px 100px;
+                h2{
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                }
+                .reponsive-features-video{
+                    display: block;
+                    margin-top: 66px;
+                }
+                .features-cards-wrapper{
+                    .features-card-box{
+                        width: 100%;
+                        margin-top: 50px;
+                        padding: 0 60px;
+                        svg{
+                            width: 47px;
+                        }
+                        h3{
+                            font-size: 23px;
+                            margin: 15px 0;
+                            line-height: 40px;
+                        }
+                        p{
+                            font-size: 20px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+                
+                .features-video{
+                    display: none;
+                }
+            }
+        }
+    }
+    // End Features Media
+    
+    // Start Organization Media
+    #organization{
+        .organization{
+            margin-top: 150px;
+            .container{
+                padding: 0 40px;
+                .all-of-organization{
+                    .organization-content{
+                        width: 100%;
+                        padding: 0 56px;
+                        text-align: center;
+                        h2{
+                            font-size: 45px;
+                            line-height: 54px;
+                        }
+                        p{
+                            font-size: 24px;
+                            line-height: 38px;
+                            margin-bottom: 85px;
+                            margin-top: 27px;
+                        }
+                        a{
+                            padding: 16px 62px;
+
+                        }
+                    
+                    }
+                    .organization-photo{
+                        margin-top: 90px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // End Organization Media 
+    
+    // Start Prototyping Media
+    #prototyping{
+        .prototyping{
+            margin-top: 150px;
+            .container{
+                padding: 0 40px;
+                .all-of-prototyping{
+                    .responsive-prototyping-content{
+                        display: block;
+                        width: 100%;
+                    }
+                    .prototyping-photo{
+                        width: 100%;
+                    }
+                    .prototyping-content{
+                        text-align: center;
+                        padding: 0 0px;
+                        width: 100%;
+                        .prototyping-content-text{
+                            display: none;
+                        }
+                        .prototyping-content-form{
+                            margin-top: 95px;
+                            .prototyping-content-form-text{
+                                margin-bottom: 20px;
+                                h3{
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                }
+                                p{
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                }
+                            }
+                            form{
+                                .prototyping-form-input{
+                                    padding:19px 93px;
+                                }
+                                .prototyping-form-input-button{
+                                    padding: 17px 145px;
+                                    margin-top: 24px;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    // End Prototyping Media
+    
+    // Start Partners Media
+    #partners{
+        .partners{
+            margin-top: 100px;
+            .container{
+                padding: 0 40px;
+                .all-of-partners{
+                    .parterns-content{
+                        padding: 0px 0px;
+                        h2{
+                            font-size: 36px;
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            font-size: 23px;
+                            line-height: 30px;
+                        }
+                    }
+                    .partners-client-name{
+                        .clients-name-list{
+                            .clients-name-list-item{
+                                width: 100%;
+                                height: 288px;
+                                p{    
+                                    font-size: 20px;
+                                    margin-bottom: 16px;
+                                    margin-top: 34px;
+                                }
+                                a{
+                                    img{
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .partners-button{
+                        a{
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    // End Partners Media
+    
+    // Start Testimoinals Media 
+    #testimonials{
+        .testimonials{
+            .container{
+                padding: 0 40px;
+                .all-of-testimonials{
+                    .testimonials-content{
+                        h2{
+                            font-size: 34px;
+                            line-height: 47px;
+                        }
+                        svg{
+                            margin: 90px 0px 60px 0px;
+                        }
+                        p{
+                            font-size: 21px;
+                            line-height: 35px;
+                        }
+                    }
+                    .testimonials-person{
+                        .testimonials-person-text{
+                            h4{
+                                font-size: 16px;
+                                line-height: 23px;
+                                text-align: left;
+                            }
+                            a{
+                                font-size: 16px;
+                                line-height: 23px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                    .testimonials-button{
+                        a{
+                            padding: 16px 12px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Telsimonials Media
+    
+    // Start Pricing Media 
+    #pricing{
+        .pricing{
+            .container{
+                    padding: 0 40px;
+                    .all-of-pricing{
+                        .pricing-content{
+                            padding: 0 0px 90px 0px;
+                        }
+                        .pricing-cards-wrapper{
+                            .pricing-card-box{
+                                width: 100%;
+                                padding: 43px 105px;
+                                margin-bottom: 50px;
+                                
+                              .pricing-card-title-text{
+                                  padding: 0 6px;
+                                  h3{
+                                      font-size: 20px;
+                                      line-height: 28px;
+                                  }
+                                  p{
+                                      font-size: 16px;
+                                      line-height: 23px;
+                                  }
+                              }  
+                              .pricing-card-pay{
+                                  margin: 15px 0px;
+                                  span{
+                                      font-size: 74px;
+                                      line-height: 84px;
+                                  }
+                                  .pricing-card-pay-price{
+                                  h4{
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                  }
+                                  p{
+                                      font-size: 16px;
+                                      line-height: 23px;
+                                  }
+                                  }
+                              }
+                              .pricing-list{
+                                  .pricing-list-item{
+                                      a{
+                                          font-size: 20px;
+                                          line-height: 28px;
+                                      }
+                                  }
+                              }
+                            }
+                            .pricing-card-button{
+                                a{
+                             
+                                    color: $Primary;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+        // end pricing media 
+        
+        // start contact media 
+    #contact{
+        .contact{
+            .container{
+                padding: 0 40px;
+               .all-of-contact{
+                   .contact-content{
+                    padding: 0 0 90px 0;
+                       h2{
+                           font-size: 38px;
+                       }
+                       p{
+                           font-size: 23px;
+                           line-height: 28px;
+                       }
+                   }
+                   .contact-us{
+                       
+                    .responsive-contact-information{
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 70px;
+                    .contact-information{
+                        .contact-list{ 
+                            text-align: left;
+                            .contact-list-item{
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                text-align: left;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 22px;
+                                letter-spacing: 0.10000000149011612px;
+                                margin-bottom: 20px;
+                                p{
+                                margin-left: 15px;
+                                }
+                                a{
+                                    svg{
+                                        &:hover{
+                                           transform: rotate(360deg);
+                                           transition: 1s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .contact-social{
+                        width: 100%; 
+                        .contact-social-list{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            margin-bottom: 90px;
+                            .contact-social-list-item{
+                                a{
+                                    svg{
+                                        &:hover{
+                                            transform: rotate(360deg);
+                                            transition: 1s;
+                                         }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+                       
+                    .contact-form{
+                        width: 100%;
+                        form{
+                            width: 100%;
+                           padding: 30px 25px; 
+                           border-radius: 20px;
+                        h2{
+                            font-size: 20px;
+                            line-height: 28px;
+                        }
+                       
+                        input{
+                            height: 51px;
+                            margin-top: 35px;
+                        }
+                        textarea{
+                            height: 200px;
+                            margin-bottom: 35px;
+                            margin-top: 35px;
+                        }
+                        button{
+                            border-radius: 35px;
+                            padding: 16px 48px;
+                        }
+                    }
+                }
+                       .contact-us-information{                           
+                           display: none;
+                       }
+                   }
+               } 
+            }
+        }
+    }
+        // End Contact Media 
+    }
+    // End main media
+
+}
+
+@media (max-width: 460px){
+    // Start Main Media
+    main{
+        // Start Best Product Media
+        #best-product{
+            .best-product{
+            height: 935px;
+                .container{
+                    padding: 0 40px;
+                    .best-product-content{
+                        padding:185px 0px 0px 00px;;
+                        h1{
+                            font-size: 30px;
+                            line-height: 34px;
+                            padding: 0px 30px;
+                        }
+                        p{
+                            font-size: 20px;
+                            line-height: 30px;
+                            margin-top: 40px;
+                            margin-bottom: 80px;
+                        }
+                    }
+                }
+            }
+        }
+        // End Best Product  Media
+         // Start Features Media 
+      #features{
+        .features{
+            margin-top: 80px;
+            .container{
+                padding: 0 40px;
+                .features-content{
+                    padding: 0 40px;
+                h2{
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 19px;
+                    line-height: 29px;
+                }
+                }
+                
+                .reponsive-features-video{
+                    height: 240px;
+                }
+                .features-cards-wrapper{
+                    .features-card-box{
+                        width: 100%;
+                        margin-top: 50px;
+                        padding: 0 40px;
+                        svg{
+                            width: 47px;
+                        }
+                        h3{
+                            font-size: 18px;
+                            margin: 15px 0;
+                            line-height: 28px;
+                        }
+                        p{
+                            font-size: 17px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    // End Features Media 
+       
+    //Start Organization Media
+    #organization{
+        .organization{
+            .container{
+                .all-of-organization{
+                    .organization-content{
+                        padding: 0 30px;
+                        h2{
+                            font-size: 27px;
+                            line-height: 32px;
+                        }
+                        p{
+                            font-size: 19px;
+                            line-height: 29px;
+                            margin-bottom: 70px;
+                            margin-top: 27px;
+                        }
+                        a{
+                            padding: 12px 22px;
+
+                        }
+                    
+                    }
+                    .organization-photo{
+                        margin-top: 20px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // End Organization Media 
+    
+    // Start Prototyping Media
+    #prototyping{
+        .prototyping{
+            margin-top: 120px;
+            .container{
+                padding: 0 40px;
+                .all-of-prototyping{
+                    .prototyping-photo{
+                        margin-top: 20px;
+                        svg{
+                            height: 300px;
+                        }
+                    }
+                    .prototyping-content{
+                        .prototyping-content-form{
+                            .prototyping-content-form-text{
+                                h3{
+                                    font-size: 22px;
+                                    line-height: 29px;
+                                }
+                            }
+                            form{
+                                .form-input{
+                                    padding:19px 35px;
+                                }
+                                .form-button{
+                                    padding: 17px 87px;
+                                    margin-top: 24px;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    // End Prototyping Media
+    
+    // Start Partners Media
+    #partners{
+        .partners{
+            margin-top: 100px;
+            .container{
+                padding: 0 40px;
+                .all-of-partners{
+                    .patners-client-name{
+                        .clients-name-list{
+                            display: flex;
+                            flex-direction: column;
+                            .clients-name-list-item{
+                                width: 100%;
+                                height: 210px;
+                                margin-top: 30px;
+                                p{    
+                                    font-size: 16px;
+                                    margin-bottom: 20px;
+                                    margin-top: 24px;
+                                }
+                                a{
+                                    img{
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .partners-button{
+                        a{
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    // End Partners Media
+    
+    // Start Pricing Media 
+    #pricing{
+        .pricing{
+            .container{
+                    .all-of-pricing{
+                        .pricing-content{
+                            p{
+                                font-size: 18px;
+                                line-height: 25px;
+                            }
+                        }
+                        .pricing-cards-wrapper{
+                            .pricing-card-box{
+                                padding: 43px 0px;
+                              .pricing-card-title-tex{
+                                  padding: 0 58px;
+                                  p{
+                                      font-size: 15px;
+                                  }
+                              }
+                              .pricing-card-list{
+                                  .pricing-card-list-item{
+                                      a{
+                                          font-size: 20px;
+                                          line-height: 28px;
+                                      }
+                                  }
+                              }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+        // End Pricing Media 
+        // Start Contact Media 
+    #contact{
+        .contact{
+            .container{
+                padding: 0 40px;
+               .all-of-contact{
+                   .contact-content{
+                       p{
+                           font-size: 17px;
+                           line-height: 24px;
+                       }
+                   }
+                }
+            }
+        }
+    }
+    }
+    // End Main Media
+
 }
